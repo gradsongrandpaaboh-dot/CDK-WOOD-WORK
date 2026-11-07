@@ -1,83 +1,158 @@
-<link rel="stylesheet" href="style.css">
-<header class="hero">
-  <h1>CDK WOOD WORK</h1>
-  <p>Quality Craftsmanship. Beautiful Woodwork.</p>
-  <a class="contact-btn" href="#contact">Get a Quote</a>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDK WOOD WORK</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #2a1f16;
+      background: #f6f1ea;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#work">Our Work</a>
-  <a href="#contact">Contact</a>
-</nav>
+    .hero { background: #3b2a1c; color: #fff; padding: 56px 0 44px; }
+    .hero h1 { margin: 0 0 8px; font-size: clamp(34px, 9vw, 60px); line-height: 1.05; letter-spacing: .02em; }
+    .hero p { margin: 0 0 24px; font-size: 18px; color: #e8d9c5; }
 
-<section id="home">
-  <h2>Welcome to CDK WOOD WORK</h2>
-  <p>Looking for quality carpentry and woodwork? We create practical, beautiful wooden fittings and custom pieces to suit your needs.</p>
-  <p>Tell us what you have in mind, and let's discuss your project.</p>
-</section>
+    .contact-btn {
+      display: inline-block; background: #d9a064; color: #2a1f16; text-decoration: none;
+      font-weight: 700; padding: 12px 22px; border-radius: 6px;
+    }
+    .contact-btn:hover { background: #e6b27a; }
 
-<section id="services">
-  <h2>Our Services</h2>
-  <h3>Kitchen Cupboards & Cabinets</h3>
-  <p>Custom wooden storage and kitchen fittings.</p>
+    nav { background: #5a3f28; position: sticky; top: 0; z-index: 5; }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 4px 22px; padding-top: 10px; padding-bottom: 10px; }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
 
-  <h3>Wardrobes & Bedroom Furniture</h3>
-  <p>Storage solutions designed for your space.</p>
+    section { padding: 44px 0; border-bottom: 1px solid #ddd0bf; scroll-margin-top: 48px; }
+    section h2 { margin: 0 0 16px; font-size: 28px; }
+    section p { margin: 0 0 12px; max-width: 42em; }
 
-  <h3>Doors & Wooden Fittings</h3>
-  <p>Wooden fittings for your home or business.</p>
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 20px; }
+    .service-card { background: #fff; border: 1px solid #ddd0bf; border-radius: 10px; padding: 18px; }
+    .service-card h3 { margin: 0 0 6px; font-size: 18px; }
+    .service-card p { margin: 0; color: #5d4e40; }
 
-  <h3>Custom Furniture & Shelving</h3>
-  <p>Made-to-order furniture and shelving ideas.</p>
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 20px; }
+    .gallery img { width: 100%; height: 240px; object-fit: cover; border-radius: 10px; display: block; background: #ddd0bf; }
 
-  <h3>General Carpentry</h3>
-  <p>Discuss your carpentry needs with us.</p>
-<h3>Drywall Installation</h3>
-<p>Professional drywall fitting and finishing.</p>
+    footer { padding: 24px 0 40px; color: #5d4e40; font-size: 14px; }
+  </style>
+</head>
+<body>
 
-<h3>Ceiling Installation</h3>
-<p>Quality ceiling installation and finishing.</p>
+  <header class="hero">
+    <div class="wrap">
+      <h1>CDK WOOD WORK</h1>
+      <p>Quality Craftsmanship. Beautiful Woodwork.</p>
+      <a class="contact-btn" href="#contact">Get a Quote</a>
+    </div>
+  </header>
 
-<h3>Cornice Installation</h3>
-<p>Neat cornice fitting for a beautiful finish.</p>
+  <nav>
+    <div class="wrap">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-<h3>Skirting Installation</h3>
-<p>Clean skirting installation for walls and floors.</p>
-</section>
-  <section id="work">
-  <h2>Our Work</h2>
-  <p>Take a look at our carpentry work.</p>
+  <main>
 
-  <div class="gallery">
-    <img src="https://i.postimg.cc/mr8wQvn2/IMG-20261024-WA0008.jpg" alt="CDK carpentry work">src
-    <img src="https://i.postimg.cc/t4dDgZt7/IMG-20261024-WA0010.jpg" alt="CDK carpentry work">
-    <img src="https://i.postimg.cc/j2J4YLdG/IMG-20261024-WA0007.jpg" alt="CDK carpentry work">
-    <img src="https://i.postimg.cc/DfW9w6WK/IMG-20261024-WA0009.jpg" alt="CDK carpentry work">
-    <img src="https://i.postimg.cc/vmr5SHkj/IMG-20261104-WA0001.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/bvx1FNWm/IMG-20261104-WA0002.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/FKy0ns8D/IMG-20261104-WA0003.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/Lstj06w3/IMG-20261104-WA0004.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/zfCTPX6k/IMG-20261104-WA0015.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/YS6QyqZs/IMG-20261104-WA0006.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/8CRLnP94/IMG-20261104-WA0010.jpg" alt="CDK woodwork">
-<img src="https://i.postimg.cc/d02GStpS/IMG-20261104-WA0009.jpg" alt="CDK woodwork">
-  </div>
-</section>
+    <section id="home">
+      <div class="wrap">
+        <h2>Welcome to CDK WOOD WORK</h2>
+        <p>Looking for quality carpentry and woodwork? We create practical, beautiful wooden fittings and custom pieces to suit your home or business.</p>
+        <p>Tell us what you have in mind, and let's discuss your project.</p>
+      </div>
+    </section>
 
+    <section id="services">
+      <div class="wrap">
+        <h2>Our Services</h2>
+        <div class="services">
+          <div class="service-card">
+            <h3>Kitchen Cupboards &amp; Cabinets</h3>
+            <p>Custom wooden storage and kitchen fittings.</p>
+          </div>
+          <div class="service-card">
+            <h3>Wardrobes &amp; Bedroom Furniture</h3>
+            <p>Storage solutions designed for your space.</p>
+          </div>
+          <div class="service-card">
+            <h3>Doors &amp; Wooden Fittings</h3>
+            <p>Wooden fittings for your home or business.</p>
+          </div>
+          <div class="service-card">
+            <h3>Custom Furniture &amp; Shelving</h3>
+            <p>Made-to-order furniture and shelving ideas.</p>
+          </div>
+          <div class="service-card">
+            <h3>General Carpentry</h3>
+            <p>Discuss your carpentry needs with us.</p>
+          </div>
+          <div class="service-card">
+            <h3>Drywall Installation</h3>
+            <p>Professional drywall fitting and finishing.</p>
+          </div>
+          <div class="service-card">
+            <h3>Ceiling Installation</h3>
+            <p>Quality ceiling installation and finishing.</p>
+          </div>
+          <div class="service-card">
+            <h3>Cornice Installation</h3>
+            <p>Neat cornice fitting for a beautiful finish.</p>
+          </div>
+          <div class="service-card">
+            <h3>Skirting Installation</h3>
+            <p>Clean skirting installation for walls and floors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact CDK WOOD WORK</h2>
-  <p>Have a carpentry project in mind? Contact us for a quote.</p>
+    <section id="work">
+      <div class="wrap">
+        <h2>Our Work</h2>
+        <p>Take a look at our carpentry work.</p>
+        <div class="gallery">
+          <img src="https://i.postimg.cc/mr8wQvn2/IMG-20261024-WA0008.jpg" alt="CDK carpentry work">
+          <img src="https://i.postimg.cc/t4dDgZt7/IMG-20261024-WA0010.jpg" alt="CDK carpentry work">
+          <img src="https://i.postimg.cc/j2J4YLdG/IMG-20261024-WA0007.jpg" alt="CDK carpentry work">
+          <img src="https://i.postimg.cc/DfW9w6WK/IMG-20261024-WA0009.jpg" alt="CDK carpentry work">
+          <img src="https://i.postimg.cc/vmr5SHkj/IMG-20261104-WA0001.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/bvx1FNWm/IMG-20261104-WA0002.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/FKy0ns8D/IMG-20261104-WA0003.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/Lstj06w3/IMG-20261104-WA0004.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/zfCTPX6k/IMG-20261104-WA0015.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/YS6QyqZs/IMG-20261104-WA0006.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/8CRLnP94/IMG-20261104-WA0010.jpg" alt="CDK woodwork">
+          <img src="https://i.postimg.cc/d02GStpS/IMG-20261104-WA0009.jpg" alt="CDK woodwork">
+        </div>
+      </div>
+    </section>
 
-  <a class="contact-btn"
-     href="https://wa.me/27748251838"
-     target="_blank">
-    Chat with Us on WhatsApp
-  </a>
-</section>
+    <section id="contact">
+      <div class="wrap">
+        <h2>Contact CDK WOOD WORK</h2>
+        <p>Have a carpentry project in mind? Contact us for a quote.</p>
+        <a class="contact-btn" href="https://wa.me/27748251838" target="_blank" rel="noopener">Chat with Us on WhatsApp</a>
+      </div>
+    </section>
 
-<footer>
-  <p>© CDK WOOD WORK</p>
-</footer>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; CDK WOOD WORK</div>
+  </footer>
+
+</body>
+</html>
